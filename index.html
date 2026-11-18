@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A browser-based psychology experiment exploring encoding strategies and memory.">
+  <title>Memory & Encoding Study</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="site-header">
+      <div class="eyebrow">PSYC 402 · MEMORY STUDY</div>
+      <div class="header-line">
+        <h1>Memory &amp; Encoding</h1>
+        <span class="study-tag">Experiment</span>
+      </div>
+    </header>
+
+    <section class="progress-wrap" aria-label="Experiment progress">
+      <div class="progress-meta"><span id="stage-label">Welcome</span><span id="progress-label">0%</span></div>
+      <div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div>
+    </section>
+
+    <section id="app" class="panel" aria-live="polite">
+      <div class="welcome-mark">M</div>
+      <p class="eyebrow">WELCOME</p>
+      <h2>How do different strategies shape memory?</h2>
+      <p class="intro-copy">In this study, you will learn words using three different strategies, complete a brief distraction activity, and then recall as many words as you can.</p>
+      <div class="info-grid">
+        <div><strong>3</strong><span>learning rounds</span></div>
+        <div><strong>18</strong><span>words to study</span></div>
+        <div><strong>~5</strong><span>minutes</span></div>
+      </div>
+      <div class="notice"><strong>Before you begin</strong><br>Find a quiet place, keep this browser tab open, and do not write down or otherwise record the words.</div>
+      <button id="start-btn" class="primary-btn">Begin experiment <span aria-hidden="true">→</span></button>
+      <p class="small-note">Practice experiment only. Your responses stay in this browser and are not uploaded.</p>
+    </section>
+
+    <footer><span>ENCODING STRATEGIES</span><span>Data remains on this device</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
